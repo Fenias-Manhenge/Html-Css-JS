@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="HTML5.ico" type="image/x-icon">
+    <title>HTML media</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dinamic image</h1>
+    <p>Try open this site in multiple platforms, or simply increase and decrease the size of your browser!</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Images/Photo-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Images/Photo-M.png" type="image/png">
+        <img src="Images/Photo-G.png" alt="Flexible image">
+    </picture>
+
+    <a href="http://" target="_blank" rel="external">Link da aula!</a>
+</body>
+</html>
