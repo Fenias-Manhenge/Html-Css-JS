@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Images</title>
+        <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+        <style>
+            body{
+                background-color: cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Challenge of Images</h1>
+        <p>insert an image in HTML is verry easy,</p>
+        
+        <picture>
+            <source media="(max-width: 500px)" srcset="Images/gafanhoto-p.png" type="image/png">
+            <source media="(max-width: 850px)" srcset="Images/gafanhoto-m.png" type="image/png">
+            <img src="Images/gafanhoto-g.png" alt="Flexible image">
+        </picture>
+    </body>
+</html>
