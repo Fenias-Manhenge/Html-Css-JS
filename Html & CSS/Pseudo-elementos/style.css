@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightgrey;
+}
+
+a {
+    color: lightseagreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: peru;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: indigo;
+}
+
+a:active {
+    color: khaki;
+}
+
+a::after {
+    content: ' [Links]';
+    color: lightslategrey;
+}
