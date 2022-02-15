@@ -44,6 +44,9 @@ h2 {
     color: white;
     font-size: 4em;
     font-family: 'Rye', cursive;
+    text-shadow: -2px 2px brown,
+    -5px 4px brown,
+    -8px 5px brown;
 }
 
 .box {

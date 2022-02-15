@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1: #045956;
+    --cor2: #19807C;
+    --cor3: #07A6A0;
+    --cor4: #08CCC5;
+    --cor5: #4EE6E0;
+}
+
+body{
+    background-color: var(--cor4);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+
+/* 
+    Seccao desenvolvimento
+*/
+.majorHeader {
+    background-color: var(--cor1);
+    color: whitesmoke;
+    height: 150px;
+    padding: 10px 10px 0px 10px;
+    text-align: center;
+}
+
+.majorHeader > h1, h2{
+    margin: 15px;
+}
+
+.majorHeader > nav > a, nav:hover > a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.majorHeader > nav:hover > a{
+    background-color: var(--cor4);
+}
+
+main {
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    width: 900px;
+    border-radius: 0 0 10px 10px;
+}
+
+main > .desenvolvimento > h1, h2{
+    font-family: 'idroid';
+    color: var(--cor2);
+    text-align: left;
+}
+
+/* 
+    Seccao Video
+*/
+main > .secVideo {
+    width: 100%;
+    height: 400px;
+    
+}
+
+/*
+    Seccao Mais
+*/
+main > .secVideo > .artVideoDroid {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .mais > aside > .maisDiv{
+    background-color: var(--cor3);
+    padding: 15px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+main > .mais > aside > .maisDiv > ol{
+    list-style-type: '\2714';
+    columns: 2;
+    list-style-position: inside;
+    margin: 10px 0px;
+}
+
+main > .mais > aside > .maisDiv > .maisDivHead{
+    background-color: var(--cor5);
+    padding: 5px;
+    margin: -15px -15px 5px -15px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+/* 
+    Seccao Footer
+*/
+footer {
+    text-align: center;
+    background-color: var(--cor3);
+    margin-top: 10px;
+    padding: 5px;
+}
