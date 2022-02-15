@@ -13,29 +13,32 @@ body {
     align-items: center;
     min-height: 100vh;
     background-color: #000;
+    margin: auto;
 }
 
-header .link {
-    background-color: red;
-}
-
-header > nav > a {
-    position: absolute;
-    top: 5%;
-    justify-content: center;
-    color: springgreen;
-}
 footer > audio{
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 40%;
-    background-color: silver;
+    background-color: transparent;
 }
 
 footer > nav{
     position: absolute;
     top: 95%;
-    left: 10%;
+    left: 5%;
+}
+
+footer > nav > a{
+    text-decoration: none;
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+footer > nav > a:hover{
+    text-decoration: none;
+    background-color: gray;
+    border-radius: 4px;
 }
 
 h2 {
