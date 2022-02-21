@@ -23,6 +23,8 @@ body{
     background-color: var(--cor4);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
+    margin: auto;
+    
 }
 
 /* 
@@ -37,16 +39,19 @@ body{
 }
 
 .majorHeader > h1, h2{
-    margin: 15px;
+    margin: 10px;
 }
 
-.majorHeader > nav > a, nav:hover > a {
+.majorHeader > nav > a {
     text-decoration: none;
     color: whitesmoke;
-    padding: 15px;
+    
+    border-radius: 5px;
 }
 
 .majorHeader > nav:hover > a{
+    background-color: var(--cor2);
+    padding: 2px;
     background-color: var(--cor4);
 }
 
@@ -56,6 +61,8 @@ main {
     background-color: white;
     width: 900px;
     border-radius: 0 0 10px 10px;
+    min-width: 320px;
+    min-height: 400px;
 }
 
 main > .desenvolvimento > h1, h2{
