@@ -39,7 +39,7 @@ footer > nav > a{
 
 footer > nav > a:hover{
     text-decoration: none;
-    background-color: gray;
+    background-color: rgb(255, 225, 161);
     border-radius: 4px;
 }
 
@@ -52,7 +52,6 @@ h2 {
     background-image: url('Gold/Hot_Foil_Gold.jpg');
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    
 }
 
 .box {
@@ -60,7 +59,7 @@ h2 {
     width: 200px;
     height: 200px;
     transform-style: preserve-3d;
-    animation: rotate 40s linear infinite; 
+    animation: rotate 80s linear infinite; 
 }
 
 .box > span {

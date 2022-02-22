@@ -24,7 +24,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
     margin: auto;
-    
 }
 
 /* 
@@ -33,7 +32,7 @@ body{
 .majorHeader {
     background-color: var(--cor1);
     color: whitesmoke;
-    height: 150px;
+    min-height: 170px;
     padding: 10px 10px 0px 10px;
     text-align: center;
 }
@@ -45,11 +44,10 @@ body{
 .majorHeader > nav > a {
     text-decoration: none;
     color: whitesmoke;
-    
     border-radius: 5px;
 }
 
-.majorHeader > nav:hover > a{
+.majorHeader > nav > a:hover{
     background-color: var(--cor2);
     padding: 2px;
     background-color: var(--cor4);
@@ -59,10 +57,9 @@ main {
     padding: 20px;
     margin: auto;
     background-color: white;
-    width: 900px;
+    min-width: 200px;
+    max-width: 800px;
     border-radius: 0 0 10px 10px;
-    min-width: 320px;
-    min-height: 400px;
 }
 
 main > .desenvolvimento > h1, h2{
@@ -75,14 +72,29 @@ main > .desenvolvimento > h1, h2{
     Seccao Video
 */
 main > .secVideo {
+    padding: 20px;
+    position: relative;
     width: 100%;
-    height: 400px;
-    
+    background-color: var(--cor1);
+    margin: 15px 0;
+}
+
+main > .secVideo > iframe{
+    margin: 10px 0px;
 }
 
 /*
     Seccao Mais
 */
+
+main > .picIrina > source, img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 main > .secVideo > .artVideoDroid {
     width: 80%;
     justify-content: center;
@@ -94,6 +106,7 @@ main > .mais > aside > .maisDiv{
     padding: 15px;
     border-radius: 10px;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 main > .mais > aside > .maisDiv > ol{
