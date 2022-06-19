@@ -18,8 +18,9 @@ body {
 
 footer > audio{
     position: absolute;
-    top: 85%;
-    left: 40%;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
     background-color: transparent;
 }
 
@@ -56,8 +57,8 @@ h2 {
 
 .box {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     transform-style: preserve-3d;
     animation: rotate 80s linear infinite; 
 }
@@ -70,7 +71,7 @@ h2 {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 35deg)) translateZ(380px);
+    transform: rotateY(calc(var(--i) * 35deg)) translateZ(300px);
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
 }
 
