@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "gift-outside">
+        <h1>Click for present: </h1>
+        <img src="https://images.vexels.com/media/users/3/146556/isolated/preview/d9dfef279c898f343efd7535f0774b12-caixa-de-presente-quadrada-e-embrulhada-by-vexels.png" alt="presente" width=110px height=100px;>
+      
+     </div>
+    
+    <div id = "gift-inside" class = "hidden" style="display: none;">
+        <h1>Amanha Faremos uma tour na UEM "Faculdade de Enginharia"</h1>
+        <image src = "https://t3.ftcdn.net/jpg/01/22/54/24/240_F_122542408_Yk5uHc0uzmkmnHQ4Dmaw0Gc5WInOxt1M.jpg" alt="presente" width=110px height=100px;>
+    </div>
+
+    <script>
+        function openPresent(event){
+            const image = event.currentTarget;
+            image.removeEventListener('click', openPresent);
+            
+            const giftOutside = document.querySelector('#gift-outside');
+            const giftInside = document.querySelector('#gift-inside');
+            giftOutside.classList.add('hidden');
+            giftInside.classList.remove('hidden');
+        }
+
+        const image = document.querySelector('img');
+        image.addEventListener('click', openPresent);
+    </script>
+</body>
+</html>

@@ -32,25 +32,35 @@ body{
 .majorHeader {
     background-color: var(--cor1);
     color: whitesmoke;
-    min-height: 170px;
+    min-height: 150px;
     padding: 10px 10px 0px 10px;
     text-align: center;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
-.majorHeader > h1, h2{
-    margin: 10px;
+.majorHeader > h1, p{
+    margin-top: 10px;
+}
+
+.majorHeader > nav{
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .majorHeader > nav > a {
     text-decoration: none;
     color: whitesmoke;
     border-radius: 5px;
+    font-weight: bold;
+    display: inline;
 }
 
 .majorHeader > nav > a:hover{
-    background-color: var(--cor2);
     padding: 2px;
     background-color: var(--cor4);
+    transition-duration: 1s;
 }
 
 main {
@@ -59,7 +69,20 @@ main {
     background-color: white;
     min-width: 200px;
     max-width: 800px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+main p{
+    text-indent: 30px;
+    line-height: 1.3em;
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 15px;
+    margin: 15px;
+    border-radius: 5px;
 }
 
 main > .desenvolvimento > h1, h2{
@@ -131,5 +154,5 @@ footer {
     text-align: center;
     background-color: var(--cor3);
     margin-top: 10px;
-    padding: 5px;
+    padding: 2px;
 }
