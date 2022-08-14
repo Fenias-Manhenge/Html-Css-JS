@@ -269,6 +269,25 @@ LResult Skip Results Iframe
                 text-align: center;
                 color: white;
                 font-size: 3.5em;
+                
+            }
+
+            @keyframes names{
+                0%{
+                    scale: 0%;
+                }
+                30%{
+                    scale: 30px;
+                }
+                60%{
+                    scale: 60%;
+                }
+                90%{
+                    scale: 90%;
+                }
+                100%{
+                    scale: 100%;
+                }
             }
 
             footer audio, h2 {
@@ -276,6 +295,7 @@ LResult Skip Results Iframe
                 transform: translate(-50%, -50%);
                 left: 50%;
                 top: 90%;
+                animation: names 2s ease-in-out infinite;
             }
 
             footer h2 {
@@ -334,7 +354,7 @@ LResult Skip Results Iframe
 
         <footer>
             <h2>Fenias</h2>
-            <audio preload="metadata" src="Media/Two Steps From Hell - See Me Fight (Instrumental) (1).mp3" controls></audio>
+            <audio preload="metadata" src="Media/Taylor-Swift-exile.mp3" controls></audio>
         </footer>
     </body>
 </html>

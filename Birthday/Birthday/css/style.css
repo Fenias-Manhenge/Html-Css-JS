@@ -86,7 +86,7 @@ div#sea {
   position: absolute;
   color: #fff;
   width: 100%;
-  content: "Click Me!";
+  content: "Me click por favor!";
   left: 0;
   bottom: 0;
   font-size: 24px;
@@ -160,6 +160,7 @@ div#sea {
   width: 100%;*/
   height: auto;
   transform: translateY(10px) rotate(-20deg);
+  z-index: 0;
 }
 .icons .row {
   width: 100%;
@@ -379,6 +380,7 @@ div#sea {
   border-radius: 50%;
   background: #ddd;
   box-shadow: inset 20px -10px 0 0 #b9b9b9;
+  z-index: 0;
 }
 
 .moon .crater1 {
@@ -414,6 +416,13 @@ div#sea {
   right: 25px;
 }
 
+div#video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 41%;
+  left: 62%;
+  z-index: 10;
+}
 @media (min-width: 1000px) {
   .icons {
     left: 30px;
@@ -427,6 +436,7 @@ div#sea {
     left: 80px;
     bottom: 70px;
     width: 160px;
+    z-index: 0;
   }
 
   div#beach {
@@ -434,8 +444,10 @@ div#sea {
   }
 
   div#video {
-    right: 290px;
-    bottom: 235px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+    z-index: 10;
   }
 
   div#video iframe {
