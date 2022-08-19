@@ -50,9 +50,10 @@ h2 {
     color: white;
     font-size: 4em;
     font-family: 'Rye', cursive;
-    background-image: url('Gold/fundo-de-pedra-preciosa-da-opala.jpg');
+    background-image: url('Gold/nameBack.jpg');
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    animation: bits 4s ease-in-out;
 }
 
 .box {
@@ -60,7 +61,7 @@ h2 {
     width: 120px;
     height: 120px;
     transform-style: preserve-3d;
-    animation: rotate 80s linear infinite; 
+    animation: rotate 60s linear infinite; 
 }
 
 .box > span {
@@ -71,7 +72,7 @@ h2 {
     height: 100%;
     transform-origin: center;
     transform-style: preserve-3d;
-    transform: rotateY(calc(var(--i) * 35deg)) translateZ(300px);
+    transform: rotateY(calc(var(--i) * 35deg)) translateZ(280px);
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
 }
 
@@ -93,5 +94,14 @@ h2 {
     }
     100% {
         transform: perspective(1000px) rotateY(360deg);       
+    }
+}
+
+@keyframes bits {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(0.5);
     }
 }
